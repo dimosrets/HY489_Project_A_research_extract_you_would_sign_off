@@ -1,0 +1,178 @@
+{
+  "rows": 188,
+  "overall": {
+    "n": 188,
+    "controlled": 66,
+    "pct": 35.1
+  },
+  "by_town_group": {
+    "large": {
+      "n": 67,
+      "controlled": 26,
+      "pct": 38.8
+    },
+    "small": {
+      "n": 121,
+      "controlled": 40,
+      "pct": 33.1
+    }
+  },
+  "by_town": {
+    "Heraklion": {
+      "n": 30,
+      "controlled": 11,
+      "pct": 36.7
+    },
+    "Chania": {
+      "n": 37,
+      "controlled": 15,
+      "pct": 40.5
+    },
+    "Rethymno": {
+      "n": 25,
+      "controlled": 7,
+      "pct": 28.0
+    },
+    "Agios Nikolaos": {
+      "n": 30,
+      "controlled": 8,
+      "pct": 26.7
+    },
+    "Sitia": {
+      "n": 30,
+      "controlled": 13,
+      "pct": 43.3
+    },
+    "Ierapetra": {
+      "n": 36,
+      "controlled": 12,
+      "pct": 33.3
+    }
+  },
+  "difference_pp": {
+    "value": -5.7,
+    "lo": -20.1,
+    "hi": 8.7
+  },
+  "cells": [
+    {
+      "town_group": "large",
+      "age_band": "18-39",
+      "sex": "F",
+      "n": 12,
+      "pct": 58.3
+    },
+    {
+      "town_group": "large",
+      "age_band": "18-39",
+      "sex": "M",
+      "n": 7,
+      "pct": 85.7
+    },
+    {
+      "town_group": "large",
+      "age_band": "40-59",
+      "sex": "F",
+      "n": 13,
+      "pct": 38.5
+    },
+    {
+      "town_group": "large",
+      "age_band": "40-59",
+      "sex": "M",
+      "n": 6,
+      "pct": 66.7
+    },
+    {
+      "town_group": "large",
+      "age_band": "60-79",
+      "sex": "F",
+      "n": 11,
+      "pct": 0.0
+    },
+    {
+      "town_group": "large",
+      "age_band": "60-79",
+      "sex": "M",
+      "n": 5,
+      "pct": 20.0
+    },
+    {
+      "town_group": "large",
+      "age_band": "80+",
+      "sex": "F",
+      "n": 7,
+      "pct": 14.3
+    },
+    {
+      "town_group": "large",
+      "age_band": "80+",
+      "sex": "M",
+      "n": 6,
+      "pct": 33.3
+    },
+    {
+      "town_group": "small",
+      "age_band": "18-39",
+      "sex": "F",
+      "n": 20,
+      "pct": 40.0
+    },
+    {
+      "town_group": "small",
+      "age_band": "18-39",
+      "sex": "M",
+      "n": 20,
+      "pct": 40.0
+    },
+    {
+      "town_group": "small",
+      "age_band": "40-59",
+      "sex": "F",
+      "n": 12,
+      "pct": 41.7
+    },
+    {
+      "town_group": "small",
+      "age_band": "40-59",
+      "sex": "M",
+      "n": 15,
+      "pct": 53.3
+    },
+    {
+      "town_group": "small",
+      "age_band": "60-79",
+      "sex": "F",
+      "n": 14,
+      "pct": 21.4
+    },
+    {
+      "town_group": "small",
+      "age_band": "60-79",
+      "sex": "M",
+      "n": 12,
+      "pct": 16.7
+    },
+    {
+      "town_group": "small",
+      "age_band": "80+",
+      "sex": "F",
+      "n": 17,
+      "pct": 23.5
+    },
+    {
+      "town_group": "small",
+      "age_band": "80+",
+      "sex": "M",
+      "n": 11,
+      "pct": 18.2
+    }
+  ],
+  "odds_ratio_small_vs_large": {
+    "or": 0.7156351696379978,
+    "lo": 0.36671521465090523,
+    "hi": 1.396543354521933,
+    "n": 188,
+    "reference_age_band": "18-39"
+  }
+}

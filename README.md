@@ -33,8 +33,13 @@
 |---|---|---|
 | `PLAN.md` | Πλάνο μίας σελίδας: ερώτηση, ρόλοι, υποψήφιες εκδόσεις, χρονοδιάγραμμα | ✅ |
 | `README.md` | Αυτό το αρχείο | ✅ |
-| `request.md` | Το αίτημα των ερευνητών, βαθμολογημένο με τα Five Safes, και η ελαχιστοποιημένη λίστα στηλών (WP1) | ⏳ |
-| `analysis/` | Η ανάλυση των ερευνητών (yardstick) στα αρχικά δεδομένα και σε κάθε έκδοση (WP1) | ⏳ |
+| `common.py` | Κοινοί ορισμοί για όλη την ομάδα: πού βρίσκονται τα δεδομένα, πληθυσμός, έκβαση, ομάδες πόλεων, ηλικιακές ομάδες, keyed ψευδώνυμο | ✅ |
+| `request.md` | Το αίτημα των ερευνητών, η βαθμολόγηση με τα Five Safes, οι όροι και η ελαχιστοποίηση στηλών (WP1) | ✅ |
+| `request/score_request.py` | Βαθμολογεί το αίτημα με το rubric του Week 10, πριν και μετά τους όρους (WP1) | ✅ |
+| `analysis/build_extract.py` | Φτιάχνει το ελαχιστοποιημένο αρχείο ανάλυσης από τα αρχικά δεδομένα (WP1) | ✅ |
+| `analysis/yardstick.py` | Η ανάλυση των ερευνητών, που τρέχει σε οποιοδήποτε αρχείο ή release (WP1) | ✅ |
+| `analysis/utility.py` | Πίνακας utility: πόσο μετακινεί κάθε release την απάντηση (WP1) | ✅ |
+| `requirements.txt` | Οι βιβλιοθήκες Python που χρειάζονται | ✅ |
 | `release/` | Οι υποψήφιες εκδόσεις και το log μετασχηματισμών κάθε μίας (WP2) | ⏳ |
 | `attacks/` | Εξωτερικό μητρώο, επιθέσεις, output rule και cumulative release register (WP3) | ⏳ |
 | `outputs/` | Όλοι οι πίνακες και τα γραφήματα του report | ⏳ |
@@ -44,7 +49,31 @@
 
 ## Αναπαραγωγή
 
-*Θα συμπληρωθεί όταν υπάρχει κώδικας.* Στόχος είναι κάθε αριθμός του report να αναπαράγεται σε λιγότερο από 10 λεπτά από καθαρό clone.
+Στόχος είναι κάθε αριθμός του report να αναπαράγεται σε λιγότερο από 10 λεπτά από καθαρό clone.
+
+**1. Τα δεδομένα.** Τα δεδομένα δεν αντιγράφονται σε αυτό το repo. Κάνε clone το [repository του μαθήματος](https://github.com/kon0925/hy489) σε έναν φάκελο `hy489` που να βρίσκεται ένα, δύο ή τρία επίπεδα πάνω από αυτό το repo, π.χ.:
+
+```
+HY489/
+├── hy489/                     ← clone του μαθήματος
+└── project_2_teamD/
+    └── HY489_Project_A_research_extract_you_would_sign_off/   ← αυτό το repo
+```
+
+Εναλλακτικά, όρισε τη μεταβλητή περιβάλλοντος `HY489_COURSE_REPO` στον φάκελο του clone.
+
+**2. Βιβλιοθήκες.** Python 3.10 ή νεότερη και `pip install -r requirements.txt`.
+
+**3. WP1, από τη ρίζα του repo:**
+
+```
+python analysis/build_extract.py     # → outputs/extract_minimised.csv, extract_custodian.csv, extract_flow.csv
+python analysis/yardstick.py         # → outputs/yardstick_extract_minimised.md / .json
+python request/score_request.py      # → outputs/request_score.md
+python analysis/utility.py release/<αρχεία>.csv   # → outputs/utility_table.md / .csv
+```
+
+*Τα βήματα για το WP2 και το WP3 θα προστεθούν.*
 
 ## Προθεσμίες
 

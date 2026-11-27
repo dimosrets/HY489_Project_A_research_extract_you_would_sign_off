@@ -1,0 +1,3 @@
+| release | rows | rows_lost_pct | overall_pct | diff_pp | d_diff_pp | or | or_ci | or_change_pct | same_conclusion | cells_comparable | cell_mae_pp |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| original | 188 | 0.0 | 35.1 | -5.7 | 0.0 | 0.72 | 0.37-1.40 | 0.0 | yes | 16/16 | 0.0 |

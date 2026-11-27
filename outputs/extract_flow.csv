@@ -1,0 +1,6 @@
+step,patients
+patients in the cohort,1174
+with a hypertension diagnosis,462
+  excluded: no BP pair after diagnosis and since 2024-01-01,-232
+  excluded: under 18 at the outcome reading,-42
+in the analysis extract,188
